@@ -1,0 +1,30 @@
+/* home section */
+
+.home-right img {
+  /* filter: drop-shadow(0 0.15vw 0.3vw #ef6024)
+    drop-shadow(0 0.15vw 0.3vw #f0941f); */
+  /* animation: photoBlink 1s infinite alternate; */
+}
+
+.show-nav {
+  animation: anim 1s linear;
+}
+
+@keyframes photoBlink {
+  to {
+    filter: drop-shadow(0 0.15vw 0.3vw #ef6024)
+      drop-shadow(0 0.15vw 0.3vw #f0941f);
+  }
+  from {
+    filter: none;
+  }
+}
+
+@keyframes anim {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}
